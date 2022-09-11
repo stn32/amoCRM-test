@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test task for the vacancy "Web developer"</title>
+</head>
+<body>
+
+    <button class="start_btn">
+        Кликни
+    </button>
+
+    <div class="popup">
+        <h2>Получите набор файлов<br> для руководителя:</h2>
+        <div class="popup__content">
+            <div class="popup__img">
+                <div class="popup__icons">
+                    <div><img src="img/type1.png" alt="icon"></div>
+                    <div><img src="img/type2.png" alt="icon"></div>
+                    <div><img src="img/type3.png" alt="icon"></div>
+                    <div><img src="img/type3.png" alt="icon"></div>
+                    <div><img src="img/type3.png" alt="icon"></div>
+                    <div><img src="img/type3.png" alt="icon"></div>
+                    <div><img src="img/type3.png" alt="icon"></div>
+                </div>
+                <div class="popup__back">
+                    <div><img src="img/back1.png" alt="background"></div>
+                </div>
+            </div>
+            <div class="popup__form">
+                <form action="php/forms.php" method="POST">
+                    <label for="email">Введите Email для получения файлов:</label>
+                    <input type="email" name="email" placeholder="E-mail">
+                    <label for="tel">Введите телефон для подтверждения доступа:</label>
+                    <input type="tel" name="tel" class="popup__form_mask" placeholder="+7 (000) 000-00-00" required pattern="(?=.*\d)(?=.*[0-9]).{18}">
+                    <button type="submit">Скачать файлы &nbsp; <img src="img/hand.png" alt="icon"></button>
+                    <div class="popup__form_addtxt">
+                        <span>PDF 4,7 MB</span>
+                        <span>DOC 0,8 MB</span>
+                        <span>XLS 1,2 MB</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <button class="popup__close_btn" type="button"></button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
